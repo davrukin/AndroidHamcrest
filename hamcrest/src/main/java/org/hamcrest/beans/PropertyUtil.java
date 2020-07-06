@@ -1,8 +1,8 @@
 package org.hamcrest.beans;
 
-import java.beans.IntrospectionException;
-import java.beans.Introspector;
-import java.beans.PropertyDescriptor;
+import com.googlecode.openbeans.IntrospectionException;
+import com.googlecode.openbeans.Introspector;
+import com.googlecode.openbeans.PropertyDescriptor;
 
 /**
  * Utility class for accessing properties on JavaBean objects.

@@ -1,11 +1,14 @@
 package org.hamcrest.beans;
 
-import org.hamcrest.*;
-import org.hamcrest.core.IsEqual;
+import com.googlecode.openbeans.IntrospectionException;
+import com.googlecode.openbeans.PropertyDescriptor;
+import com.googlecode.openbeans.SimpleBeanInfo;
 
-import java.beans.IntrospectionException;
-import java.beans.PropertyDescriptor;
-import java.beans.SimpleBeanInfo;
+import org.hamcrest.AbstractMatcherTest;
+import org.hamcrest.Description;
+import org.hamcrest.Matcher;
+import org.hamcrest.StringDescription;
+import org.hamcrest.core.IsEqual;
 
 import static org.hamcrest.MatcherAssert.assertThat;
 import static org.hamcrest.Matchers.is;
@@ -162,7 +165,7 @@ public class HasPropertyWithValueTest extends AbstractMatcherTest {
     public PropertyDescriptor[] getPropertyDescriptors() {
       try {
         return new PropertyDescriptor[] { 
-            new PropertyDescriptor("property", BeanWithInfo.class, "property", null) 
+            new PropertyDescriptor("property", BeanWithInfo.class, "property", null)
           };
       } catch (IntrospectionException e) {
         throw new AssertionError("Introspection exception", e);

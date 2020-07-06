@@ -1,12 +1,16 @@
 package org.hamcrest.beans;
 
+import com.googlecode.openbeans.PropertyDescriptor;
+
 import org.hamcrest.Description;
 import org.hamcrest.DiagnosingMatcher;
 import org.hamcrest.Matcher;
 
-import java.beans.PropertyDescriptor;
 import java.lang.reflect.Method;
-import java.util.*;
+import java.util.ArrayList;
+import java.util.HashSet;
+import java.util.List;
+import java.util.Set;
 
 import static java.util.Arrays.asList;
 import static org.hamcrest.beans.PropertyUtil.NO_ARGUMENTS;

@@ -3,6 +3,8 @@ apply plugin: 'osgi'
 version = rootProject.version
 
 dependencies {
+    implementation files('libs/openbeans-1.0.jar')
+
     testImplementation(group: 'junit', name: 'junit', version: '4.12') {
         transitive = false
     }

@@ -1,11 +1,12 @@
 package org.hamcrest.beans;
 
+import com.googlecode.openbeans.PropertyDescriptor;
+
 import org.hamcrest.Condition;
 import org.hamcrest.Description;
 import org.hamcrest.Matcher;
 import org.hamcrest.TypeSafeDiagnosingMatcher;
 
-import java.beans.PropertyDescriptor;
 import java.lang.reflect.InvocationTargetException;
 import java.lang.reflect.Method;
 import java.util.Arrays;
